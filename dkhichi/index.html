@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cabinet Dentaire Dr Dkhichi · Casablanca</title>
+<meta name="description" content="Cabinet Dentaire Dr Dkhichi, Dr Mohamed Dkhichi, chirurgien-dentiste, N37, Lot Bernoussi 2, Casablanca. 5,0/5 sur 48 avis Google. Prenez rendez-vous sur WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#F7F2EB; --sand:#EFE6DA; --paper:#FFFDF9; --ink:#2A221D; --ink2:#5E534B;
+  --gold:#B3895A; --gold2:#D9BC94; --teal:#1E4A44; --teal2:#2C6A61; --line:rgba(42,34,29,.12);
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Manrope',system-ui,sans-serif;
+  --r:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--ivory);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1200px,100% - 40px);margin-inline:auto}
+.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600;display:inline-flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--gold)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:-.01em;line-height:1.05}
+h2{font-size:clamp(38px,5vw,62px)}
+h2 em,h1 em{font-style:italic;color:var(--gold)}
+.lead{font-size:17px;color:var(--ink2);max-width:540px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:999px;font-weight:600;font-size:15px;transition:.35s cubic-bezier(.2,.8,.2,1);border:1px solid transparent;white-space:nowrap}
+.btn svg{width:19px;height:19px}
+.btn-wa{background:var(--teal);color:#fff;box-shadow:0 12px 30px -12px rgba(30,74,68,.7)}
+.btn-wa:hover{background:var(--teal2);transform:translateY(-2px)}
+.btn-line{border-color:var(--ink);color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:var(--ivory)}
+.btn-gold{background:var(--gold);color:#fff}
+.btn-gold:hover{background:#9d7548}
+
+/* top bar + nav */
+.topbar{background:var(--teal);color:#E8DCCB;font-size:13px}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding:9px 0;flex-wrap:wrap}
+.topbar span{display:inline-flex;align-items:center;gap:8px}
+.topbar b{color:#fff;font-weight:600}
+nav{position:sticky;top:0;z-index:50;background:rgba(247,242,235,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:.3s}
+nav.scrolled{border-color:var(--line);background:rgba(247,242,235,.95)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:78px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo .mark{width:44px;height:44px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;font-family:var(--serif);font-size:22px;color:var(--gold);font-style:italic}
+.logo .txt{line-height:1.05}
+.logo .txt b{font-family:var(--serif);font-size:24px;font-weight:600;display:block;letter-spacing:.01em}
+.logo .txt small{font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink2)}
+.menu{display:flex;gap:34px;font-size:14.5px;font-weight:500}
+.menu a{position:relative;color:var(--ink2)}
+.menu a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:1px;background:var(--gold);transition:.3s}
+.menu a:hover{color:var(--ink)}.menu a:hover::after{width:100%}
+nav .btn{padding:12px 22px;font-size:14px}
+
+/* hero */
+.hero{position:relative;padding:70px 0 110px;overflow:hidden}
+.hero::before{content:"";position:absolute;right:-180px;top:-160px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(217,188,148,.45),transparent 65%);pointer-events:none}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}
+.hero h1{font-size:clamp(48px,6.6vw,92px);margin:22px 0 26px}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap;margin:36px 0 34px}
+.rating{display:inline-flex;align-items:center;gap:14px;padding:12px 18px 12px 12px;background:var(--paper);border:1px solid var(--line);border-radius:999px;box-shadow:0 10px 30px -18px rgba(42,34,29,.4)}
+.rating .g{width:36px;height:36px;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:0 0 0 1px var(--line)}
+.stars{color:#E2A93B;letter-spacing:2px;font-size:15px}
+.rating small{display:block;font-size:12.5px;color:var(--ink2)}
+.rating b{font-size:15px}
+.hero-visual{position:relative}
+.arch{border-radius:300px 300px var(--r) var(--r);overflow:hidden;aspect-ratio:4/5;box-shadow:0 40px 80px -40px rgba(42,34,29,.55)}
+.arch img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);animation:zoom 14s ease-out forwards}
+@keyframes zoom{to{transform:scale(1)}}
+.float-card{position:absolute;background:var(--paper);border-radius:18px;padding:18px 20px;box-shadow:0 30px 60px -25px rgba(42,34,29,.45);border:1px solid var(--line)}
+.fc-doc{left:-48px;bottom:56px;display:flex;gap:14px;align-items:center;animation:bob 6s ease-in-out infinite}
+.fc-doc .av{width:50px;height:50px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--teal2));color:#fff;display:grid;place-items:center;font-family:var(--serif);font-size:21px;font-style:italic}
+.fc-doc b{display:block;font-family:var(--serif);font-size:21px;font-weight:600;line-height:1.1}
+.fc-doc small{font-size:12.5px;color:var(--ink2)}
+.fc-open{right:-26px;top:46px;font-size:13px;animation:bob 6s ease-in-out -3s infinite}
+.fc-open .dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#2FA36B;margin-right:8px;box-shadow:0 0 0 0 rgba(47,163,107,.6);animation:pulse 2s infinite}
+.fc-open b{font-size:14px}
+@keyframes bob{50%{transform:translateY(-10px)}}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(47,163,107,0)}100%{box-shadow:0 0 0 0 rgba(47,163,107,0)}}
+
+/* marquee */
+.marquee{background:var(--ink);color:var(--ivory);padding:22px 0;overflow:hidden;white-space:nowrap}
+.marquee .track{display:inline-flex;gap:56px;animation:slide 38s linear infinite;font-family:var(--serif);font-size:30px;font-style:italic}
+.marquee .track span{display:inline-flex;align-items:center;gap:56px}
+.marquee .track span::after{content:"✦";font-style:normal;font-size:16px;color:var(--gold2)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* stats */
+.stats{padding:90px 0 40px}
+.stats .grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{padding:38px 26px;border-right:1px solid var(--line)}
+.stat:last-child{border-right:0}
+.stat b{font-family:var(--serif);font-size:58px;font-weight:500;line-height:1;display:block}
+.stat b sup{font-size:24px;color:var(--gold)}
+.stat span{font-size:14px;color:var(--ink2)}
+
+/* approach */
+section{position:relative}
+.sec{padding:110px 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:60px;flex-wrap:wrap}
+.head p{max-width:420px;color:var(--ink2)}
+.approach{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:start}
+.approach .sticky{position:sticky;top:120px}
+.approach .pic{border-radius:var(--r);overflow:hidden;margin-top:40px;aspect-ratio:5/4}
+.approach .pic img{width:100%;height:100%;object-fit:cover}
+.step{display:grid;grid-template-columns:80px 1fr;gap:20px;padding:34px 0;border-top:1px solid var(--line)}
+.step:last-child{border-bottom:1px solid var(--line)}
+.step .n{font-family:var(--serif);font-size:20px;color:var(--gold);font-style:italic}
+.step h3{font-size:34px;margin-bottom:10px}
+.step p{color:var(--ink2)}
+
+/* services */
+.services{background:var(--paper)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc{position:relative;border-radius:var(--r);overflow:hidden;min-height:440px;display:flex;align-items:flex-end;color:#fff;isolation:isolate}
+.svc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:1.2s cubic-bezier(.2,.8,.2,1)}
+.svc::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,13,0) 30%,rgba(20,16,13,.85));z-index:-1}
+.svc:hover img{transform:scale(1.07)}
+.svc .in{padding:30px}
+.svc small{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold2)}
+.svc h3{font-size:36px;margin:8px 0 10px}
+.svc p{font-size:14.5px;opacity:.86;max-width:320px}
+.svc.text{background:var(--teal);align-items:stretch}
+.svc.text::before{display:none}
+.svc.text .in{display:flex;flex-direction:column;justify-content:space-between}
+.svc.text ul{list-style:none;margin-top:18px}
+.svc.text li{padding:13px 0;border-bottom:1px solid rgba(255,255,255,.15);font-size:15px;display:flex;justify-content:space-between}
+.svc.text li::after{content:"→";color:var(--gold2)}
+
+/* doctor */
+.doctor{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.doctor .frame{position:relative}
+.doctor .frame img{border-radius:var(--r);aspect-ratio:4/5;object-fit:cover;width:100%}
+.doctor .frame::after{content:"";position:absolute;inset:24px -24px -24px 24px;border:1px solid var(--gold);border-radius:var(--r);z-index:-1}
+.sign{font-family:var(--serif);font-style:italic;font-size:44px;color:var(--teal);margin-top:30px}
+.quote{font-family:var(--serif);font-size:30px;line-height:1.3;margin:26px 0;font-style:italic}
+.checks{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px 24px;margin-top:26px}
+.checks li{display:flex;gap:10px;align-items:flex-start;font-size:15px}
+.checks li::before{content:"✓";color:#fff;background:var(--gold);width:20px;height:20px;border-radius:50%;display:grid;place-items:center;font-size:11px;flex:none;margin-top:2px}
+
+/* parcours */
+.journey{background:var(--ink);color:var(--ivory)}
+.journey .eyebrow{color:var(--gold2)}.journey .eyebrow::before{background:var(--gold2)}
+.journey .head p{color:#BDB2A6}
+.jgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.jcard{border:1px solid rgba(255,255,255,.14);border-radius:var(--r);padding:40px 32px;transition:.4s}
+.jcard:hover{background:rgba(255,255,255,.04);border-color:var(--gold2)}
+.jcard .num{font-family:var(--serif);font-size:84px;line-height:1;color:transparent;-webkit-text-stroke:1px var(--gold2)}
+.jcard h3{font-size:32px;margin:22px 0 12px}
+.jcard p{color:#BDB2A6;font-size:15px}
+
+/* reviews */
+.reviews .box{display:grid;grid-template-columns:1fr 1.2fr;gap:0;border-radius:28px;overflow:hidden;background:var(--paper);box-shadow:0 40px 80px -50px rgba(42,34,29,.5)}
+.reviews .score{background:var(--sand);padding:60px 50px;display:flex;flex-direction:column;justify-content:center}
+.reviews .score .big{font-family:var(--serif);font-size:130px;line-height:.9}
+.reviews .score .stars{font-size:26px;margin:14px 0}
+.reviews .bars{padding:60px 50px}
+.bar{display:grid;grid-template-columns:22px 1fr 44px;gap:14px;align-items:center;margin:14px 0;font-size:14px;color:var(--ink2)}
+.bar i{height:8px;border-radius:9px;background:var(--sand);overflow:hidden;position:relative}
+.bar i::after{content:"";position:absolute;inset:0;width:var(--w);background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:9px;transform-origin:left;transform:scaleX(0);transition:1.4s cubic-bezier(.2,.8,.2,1)}
+.in-view .bar i::after{transform:scaleX(1)}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.tags span{padding:9px 16px;border-radius:999px;border:1px solid var(--line);font-size:13.5px;background:var(--ivory)}
+
+/* faq */
+.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}
+details{border-top:1px solid var(--line);padding:26px 0}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;font-family:var(--serif);font-size:27px;display:flex;justify-content:space-between;gap:20px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--sans);font-size:24px;color:var(--gold);transition:.3s;flex:none}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--ink2);margin-top:14px;max-width:620px}
+
+/* contact */
+.contact{background:var(--paper)}
+.cgrid{display:grid;grid-template-columns:1fr 1.15fr;gap:24px}
+.card{background:var(--ivory);border-radius:var(--r);padding:44px;border:1px solid var(--line)}
+.card h3{font-size:34px;margin-bottom:22px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+td{padding:12px 0;border-bottom:1px solid var(--line)}
+td:last-child{text-align:right;color:var(--ink2)}
+tr.today td{color:var(--teal);font-weight:700}
+tr.today td:first-child::after{content:" · aujourd'hui";font-weight:500;font-size:12px;color:var(--gold)}
+.map{border-radius:var(--r);overflow:hidden;min-height:440px;border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:440px;border:0;filter:grayscale(.35) sepia(.15)}
+.addr{display:flex;gap:12px;margin:24px 0 28px;color:var(--ink2);font-size:15px}
+
+/* final cta */
+.final{position:relative;overflow:hidden;color:#fff;text-align:center;padding:140px 0}
+.final img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.final::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,74,68,.82),rgba(20,16,13,.88));z-index:-1}
+.final h2{font-size:clamp(44px,6vw,80px);max-width:900px;margin:18px auto 22px}
+.final p{opacity:.85;max-width:520px;margin:0 auto 36px}
+.final .eyebrow{color:var(--gold2)}.final .eyebrow::before{background:var(--gold2)}
+.final .btn-line{border-color:#fff;color:#fff}.final .btn-line:hover{background:#fff;color:var(--ink)}
+.final .ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--ink);color:#A79C91;padding:60px 0 110px;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+footer .logo .txt b{color:var(--ivory)}footer .logo .txt small{color:#8d8278}
+footer .demo{margin-top:30px;font-size:12px;opacity:.6;width:100%}
+
+/* floating whatsapp */
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:60;width:62px;height:62px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 14px 34px -10px rgba(37,211,102,.7);transition:.3s}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:32px;height:32px;fill:#fff}
+.wa-float::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25D366;animation:ring 2.2s infinite}
+@keyframes ring{to{transform:scale(1.6);opacity:0}}
+.mbar{display:none}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(40px);transition:1s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.12s}.d2{transition-delay:.24s}.d3{transition-delay:.36s}
+
+/* responsive */
+@media (max-width:980px){
+  .menu{display:none}
+  .hero{padding:40px 0 80px}
+  .hero .wrap,.approach,.doctor,.faq,.cgrid,.reviews .box{grid-template-columns:1fr;gap:50px}
+  .approach .sticky{position:static}
+  .svc-grid,.jgrid{grid-template-columns:1fr}
+  .svc{min-height:380px}
+  .stats .grid{grid-template-columns:1fr 1fr}
+  .stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .fc-doc{left:12px;bottom:18px}.fc-open{right:12px;top:18px}
+  .sec{padding:80px 0}
+  .reviews .score,.reviews .bars{padding:40px 30px}
+  .checks{grid-template-columns:1fr}
+  .topbar .hide-m{display:none}
+}
+@media (max-width:600px){
+  .wrap{width:calc(100% - 32px)}
+  nav .wrap{height:66px}
+  nav .btn{display:none}
+  .logo .txt b{font-size:21px}
+  .hero h1{font-size:50px}
+  .hero .ctas .btn{flex:1;justify-content:center}
+  .stat{padding:28px 16px}.stat b{font-size:44px}
+  .step{grid-template-columns:1fr;gap:6px}
+  .step h3{font-size:29px}
+  .card{padding:30px 22px}
+  summary{font-size:23px}
+  .reviews .score .big{font-size:100px}
+  .wa-float{display:none}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,253,249,.95);backdrop-filter:blur(12px);border-top:1px solid var(--line)}
+  .mbar .btn{justify-content:center;padding:14px 10px}
+  .doctor .frame::after{inset:14px -10px -14px 14px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<!-- ====== CONFIG: change ici pour chaque cabinet ====== -->
+<script>
+window.CABINET = {
+  phone: "+212624966103",          // numéro d'appel
+  whatsapp: "212624966103",        // numéro WhatsApp (sans +)
+  waText: "Bonjour Docteur, je souhaite prendre rendez-vous au cabinet."
+};
+</script>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="hide-m">Lot Bernoussi 2 · Bd Mbarek Ben Boubker Hammadi</span>
+    <span>Du lundi au samedi · <b>sur rendez-vous</b></span>
+    <span><a href="tel:+212624966103" data-tel>☎ <b>06 24 96 61 03</b></a></span>
+  </div>
+</div>
+
+<nav id="nav">
+  <div class="wrap">
+    <a href="#top" class="logo">
+      <span class="mark">D</span>
+      <span class="txt"><b>Dr Dkhichi</b><small>Cabinet dentaire</small></span>
+    </a>
+    <div class="menu">
+      <a href="#approche">Le cabinet</a>
+      <a href="#soins">Nos soins</a>
+      <a href="#docteur">Le docteur</a>
+      <a href="#avis">Avis</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="btn btn-wa" data-wa href="#">Prendre RDV</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow rv">Dentiste · Sidi Bernoussi, Casablanca</span>
+      <h1 class="rv d1">Un sourire sain,<br>des soins <em>en toute sérénité.</em></h1>
+      <p class="lead rv d2">Au Cabinet Dentaire Dr Dkhichi, le Dr Mohamed Dkhichi et son équipe vous accueillent dans un cadre moderne et apaisant, pour des soins précis, expliqués et sans stress.</p>
+      <div class="ctas rv d3">
+        <a class="btn btn-wa" data-wa href="#">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7.1a8.2 8.2 0 0 1-4-3.5c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.8.4 3.5 3.5 0 0 0-1.1 2.6 6 6 0 0 0 1.3 3.2 13.8 13.8 0 0 0 5.3 4.7c2 .8 2.7.9 3.7.7a3.1 3.1 0 0 0 2-1.4 2.5 2.5 0 0 0 .2-1.4c-.1-.2-.3-.3-.6-.4zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zM12 0a12 12 0 0 0-10.3 18L0 24l6.2-1.6A12 12 0 1 0 12 0z"/></svg>
+          Rendez-vous sur WhatsApp
+        </a>
+        <a class="btn btn-line" data-tel href="#">Appeler le cabinet</a>
+      </div>
+      <a class="rating rv d3" href="https://www.google.com/maps/search/?api=1&query=Cabinet%20Dentaire%20Dr%20Dkhichi&query_place_id=ChIJVfRehULLpw0RJ_lyMfx_AM8" target="_blank" rel="noopener">
+        <span class="g"><svg width="20" height="20" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3A12 12 0 1 1 31.9 15l5.7-5.7A20 20 0 1 0 44 24c0-1.2-.1-2.3-.4-3.5z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8A12 12 0 0 1 31.9 15l5.7-5.7A20 20 0 0 0 6.3 14.7z"/><path fill="#4CAF50" d="M24 44a20 20 0 0 0 13.4-5.2l-6.2-5.2A12 12 0 0 1 12.7 28l-6.5 5A20 20 0 0 0 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3a12 12 0 0 1-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.2-.1-2.3-.4-3.5z"/></svg></span>
+        <span><b>5,0</b> <span class="stars">★★★★★</span><small>Basé sur 48 avis Google</small></span>
+      </a>
+    </div>
+    <div class="hero-visual rv d2">
+      <div class="arch"><img src="img/hero.jpg" alt="Cabinet Cabinet Dentaire Dr Dkhichi"></div>
+      <div class="float-card fc-doc">
+        <span class="av">MD</span>
+        <span><b>Dr Mohamed Dkhichi</b><small>Chirurgien-dentiste</small></span>
+      </div>
+      <div class="float-card fc-open"><span class="dot"></span><b id="openNow">Ouvert aujourd'hui</b></div>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>Soins conservateurs</span><span>Implants dentaires</span><span>Orthodontie</span><span>Blanchiment</span><span>Prothèses</span><span>Détartrage</span><span>Urgences</span>
+    <span>Soins conservateurs</span><span>Implants dentaires</span><span>Orthodontie</span><span>Blanchiment</span><span>Prothèses</span><span>Détartrage</span><span>Urgences</span>
+  </div>
+</div>
+
+<section class="stats">
+  <div class="wrap grid">
+    <div class="stat rv"><b>5,0<sup>/5</sup></b><span>Note moyenne sur Google</span></div>
+    <div class="stat rv d1"><b data-count="48">0</b><span>Avis de patients</span></div>
+    <div class="stat rv d2"><b>6<sup>j/7</sup></b><span>Du lundi au samedi</span></div>
+    <div class="stat rv d3"><b>1<sup>clic</sup></b><span>Pour réserver sur WhatsApp</span></div>
+  </div>
+</section>
+
+<section class="sec" id="approche">
+  <div class="wrap approach">
+    <div class="sticky">
+      <span class="eyebrow rv">Notre approche</span>
+      <h2 class="rv d1" style="margin-top:20px">Ce qui vous attend <em>chez nous.</em></h2>
+      <div class="pic rv d2"><img src="img/hygiene.jpg" alt="Hygiène et prévention"></div>
+    </div>
+    <div>
+      <div class="step rv"><span class="n">01</span><div><h3>Vous êtes entre de bonnes mains.</h3><p>Une prise en charge attentive, du premier contrôle aux soins les plus complets, avec le même souci du détail à chaque visite.</p></div></div>
+      <div class="step rv"><span class="n">02</span><div><h3>Vous savez toujours ce qui se passe.</h3><p>Diagnostic clair, plan de traitement expliqué simplement et devis transparent avant de commencer. Aucune mauvaise surprise.</p></div></div>
+      <div class="step rv"><span class="n">03</span><div><h3>Des soins tout en douceur.</h3><p>Peur du dentiste ? Nous prenons le temps qu'il faut, à votre rythme, dans un cadre calme et rassurant.</p></div></div>
+      <div class="step rv"><span class="n">04</span><div><h3>Un cabinet moderne et soigné.</h3><p>Équipements actuels, hygiène et stérilisation rigoureuses, pour des soins précis et confortables.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec services" id="soins">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Nos soins</span><h2 class="rv d1" style="margin-top:20px">Tout votre sourire,<br><em>sous un même toit.</em></h2></div>
+      <p class="rv d2">Des soins du quotidien aux traitements esthétiques, un accompagnement complet pour toute la famille.</p>
+    </div>
+    <div class="svc-grid">
+      <a class="svc rv" data-wa href="#"><img src="img/soins.jpg" alt=""><div class="in"><small>Essentiel</small><h3>Soins & détartrage</h3><p>Caries, détartrage, contrôles réguliers : la base d'une bouche en bonne santé.</p></div></a>
+      <a class="svc rv d1" data-wa href="#"><img src="img/radio.jpg" alt=""><div class="in"><small>Remplacement durable</small><h3>Implants dentaires</h3><p>Remplacer une ou plusieurs dents manquantes avec un plan de traitement clair.</p></div></a>
+      <a class="svc rv d2" data-wa href="#"><img src="img/aligneurs.jpg" alt=""><div class="in"><small>Alignement</small><h3>Orthodontie</h3><p>Appareils et gouttières pour aligner les dents, adultes comme enfants.</p></div></a>
+      <a class="svc rv" data-wa href="#"><img src="img/consult.jpg" alt=""><div class="in"><small>Esthétique</small><h3>Blanchiment</h3><p>Un sourire plus lumineux, en toute sécurité, réalisé au cabinet.</p></div></a>
+      <a class="svc rv d1" data-wa href="#"><img src="img/hygiene.jpg" alt=""><div class="in"><small>Sur mesure</small><h3>Prothèses & couronnes</h3><p>Couronnes, bridges et prothèses pour retrouver confort et esthétique.</p></div></a>
+      <div class="svc text rv d2"><div class="in"><div><small>Et aussi</small><h3>Tous nos soins</h3></div>
+        <ul><li>Extractions</li><li>Dévitalisation</li><li>Soins des enfants</li><li>Parodontologie</li><li>Urgences dentaires</li></ul></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="docteur">
+  <div class="wrap doctor">
+    <div class="frame rv"><img src="img/salle.jpg" alt="Salle de soins"></div>
+    <div>
+      <span class="eyebrow rv">Votre dentiste</span>
+      <h2 class="rv d1" style="margin-top:20px">Dr Mohamed <em>Dkhichi</em></h2>
+      <p class="quote rv d2">« Chaque patient mérite d'être écouté, rassuré et soigné comme un membre de la famille. »</p>
+      <p class="lead rv d2">Chirurgien-dentiste à Casablanca, le Dr Dkhichi accompagne ses patients avec une approche humaine, précise et transparente, de l'enfant à l'adulte.</p>
+      <ul class="checks rv d3">
+        <li>Écoute et explications claires</li>
+        <li>Devis transparent avant les soins</li>
+        <li>Hygiène et stérilisation strictes</li>
+        <li>Soins pour toute la famille</li>
+      </ul>
+      <div class="sign rv d3">Dr M. Dkhichi</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec journey">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Votre première visite</span><h2 class="rv d1" style="margin-top:20px">Simple, rapide,<br><em>sans stress.</em></h2></div>
+      <p class="rv d2">Trois étapes pour retrouver un sourire dont vous êtes fier.</p>
+    </div>
+    <div class="jgrid">
+      <div class="jcard rv"><div class="num">01</div><h3>Écrivez-nous</h3><p>Un message WhatsApp ou un appel, et nous vous proposons un créneau qui vous convient.</p></div>
+      <div class="jcard rv d1"><div class="num">02</div><h3>Consultation</h3><p>Examen complet, diagnostic et explication de vos options, sans jargon.</p></div>
+      <div class="jcard rv d2"><div class="num">03</div><h3>Votre plan de soins</h3><p>Un plan clair et un devis détaillé. Vous décidez en toute tranquillité.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec reviews" id="avis">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Ils nous font confiance</span><h2 class="rv d1" style="margin-top:20px">48 patients<br><em>en parlent.</em></h2></div>
+      <p class="rv d2">Une des meilleures notes des cabinets dentaires de Casablanca sur Google.</p>
+    </div>
+    <div class="box rv" id="bars">
+      <div class="score">
+        <div class="big">5,0</div>
+        <div class="stars">★★★★★</div>
+        <p style="color:var(--ink2)">Note moyenne sur 48 avis Google</p>
+        <a class="btn btn-line" style="margin-top:26px;align-self:flex-start" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Cabinet%20Dentaire%20Dr%20Dkhichi&query_place_id=ChIJVfRehULLpw0RJ_lyMfx_AM8">Lire les avis sur Google ↗</a>
+      </div>
+      <div class="bars">
+        <h3 style="font-size:34px;margin-bottom:8px">Notre engagement envers chaque patient</h3>
+        <p style="color:var(--ink2)">Une note de 5,0 sur 48 avis ne doit rien au hasard : c'est le résultat d'un soin attentif, visite après visite.</p>
+        <div class="tags">
+          <span>Accueil chaleureux</span><span>Soins sans douleur</span><span>Explications claires</span><span>Cabinet très propre</span><span>Ponctualité</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:20px">
+  <div class="wrap faq">
+    <div><span class="eyebrow rv">Questions fréquentes</span><h2 class="rv d1" style="margin-top:20px">Vous vous <em>demandez…</em></h2></div>
+    <div class="rv d1">
+      <details open><summary>Comment prendre rendez-vous ?</summary><p>Le plus simple : cliquez sur le bouton WhatsApp et envoyez-nous un message. Vous pouvez aussi appeler le cabinet au 06 24 96 61 03.</p></details>
+      <details><summary>Prenez-vous les urgences ?</summary><p>Oui. En cas de douleur, contactez-nous dès que possible : nous faisons le maximum pour vous recevoir rapidement.</p></details>
+      <details><summary>Les soins sont-ils douloureux ?</summary><p>Nous utilisons des techniques d'anesthésie modernes et prenons le temps nécessaire pour que vous soyez à l'aise à chaque étape.</p></details>
+      <details><summary>Est-ce que je connais le prix avant les soins ?</summary><p>Toujours. Après la consultation, vous recevez un plan de traitement et un devis détaillé avant de commencer.</p></details>
+      <details><summary>Soignez-vous les enfants ?</summary><p>Oui, nous accueillons toute la famille, des plus petits aux seniors.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec contact" id="contact">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Nous trouver</span><h2 class="rv d1" style="margin-top:20px">Lotissement <em>Bernoussi 2.</em></h2></div>
+    </div>
+    <div class="cgrid">
+      <div class="card rv">
+        <h3>Horaires d'ouverture</h3>
+        <table id="hours">
+          <tr data-d="1"><td>Lundi</td><td>09:00 – 20:00</td></tr>
+          <tr data-d="2"><td>Mardi</td><td>09:00 – 20:00</td></tr>
+          <tr data-d="3"><td>Mercredi</td><td>09:00 – 20:00</td></tr>
+          <tr data-d="4"><td>Jeudi</td><td>09:00 – 20:00</td></tr>
+          <tr data-d="5"><td>Vendredi</td><td>13:00 – 20:30</td></tr>
+          <tr data-d="6"><td>Samedi</td><td>09:00 – 14:00</td></tr>
+          <tr data-d="0"><td>Dimanche</td><td>Fermé</td></tr>
+        </table>
+        <div class="addr"><span>📍</span><span>N37, Lot Bernoussi 2<br>Bd Mbarek Ben Boubker Hammadi, Casablanca 20610</span></div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn btn-wa" data-wa href="#">WhatsApp</a>
+          <a class="btn btn-line" data-tel href="#">06 24 96 61 03</a>
+        </div>
+      </div>
+      <div class="map rv d1">
+        <iframe loading="lazy" title="Plan d'accès" src="https://maps.google.com/maps?q=33.60848,-7.4961964&z=16&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <img src="img/hero.jpg" alt="">
+  <div class="wrap">
+    <span class="eyebrow rv">Prêt pour votre sourire ?</span>
+    <h2 class="rv d1">Votre rendez-vous en <em style="color:var(--gold2)">un seul message.</em></h2>
+    <p class="rv d2">Écrivez-nous sur WhatsApp, nous vous répondons rapidement avec un créneau.</p>
+    <div class="ctas rv d3">
+      <a class="btn btn-gold" data-wa href="#">Prendre rendez-vous</a>
+      <a class="btn btn-line" data-tel href="#">Appeler le cabinet</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a href="#top" class="logo"><span class="mark">D</span><span class="txt"><b>Dr Dkhichi</b><small>Cabinet dentaire</small></span></a>
+    <div>N37, Lot Bernoussi 2, Casablanca<br>06 24 96 61 03</div>
+    <div>© <span id="yr"></span> Cabinet Dentaire Dr Dkhichi · Dr Mohamed Dkhichi</div>
+    <div class="demo">Maquette de démonstration — textes et photos à personnaliser avec le cabinet.</div>
+  </div>
+</footer>
+
+<a class="wa-float" data-wa href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7.1a8.2 8.2 0 0 1-4-3.5c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.8.4 3.5 3.5 0 0 0-1.1 2.6 6 6 0 0 0 1.3 3.2 13.8 13.8 0 0 0 5.3 4.7c2 .8 2.7.9 3.7.7a3.1 3.1 0 0 0 2-1.4 2.5 2.5 0 0 0 .2-1.4c-.1-.2-.3-.3-.6-.4zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zM12 0a12 12 0 0 0-10.3 18L0 24l6.2-1.6A12 12 0 1 0 12 0z"/></svg></a>
+<div class="mbar"><a class="btn btn-line" data-tel href="#">Appeler</a><a class="btn btn-wa" data-wa href="#">WhatsApp</a></div>
+
+<script>
+(function(){
+  var C=window.CABINET;
+  var wa='https://wa.me/'+C.whatsapp+'?text='+encodeURIComponent(C.waText);
+  document.querySelectorAll('[data-wa]').forEach(function(a){a.href=wa;a.target='_blank';a.rel='noopener'});
+  document.querySelectorAll('[data-tel]').forEach(function(a){a.href='tel:'+C.phone});
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  // today's hours + open status (Casablanca time)
+  var now=new Date(new Date().toLocaleString('en-US',{timeZone:'Africa/Casablanca'}));
+  var d=now.getDay(), h=now.getHours()+now.getMinutes()/60;
+  var row=document.querySelector('#hours tr[data-d="'+d+'"]'); if(row) row.classList.add('today');
+  var SL={"2": [[9.0, 20.0]], "3": [[9.0, 20.0]], "4": [[9.0, 20.0]], "5": [[13.0, 20.5]], "6": [[9.0, 14.0]], "0": [], "1": [[9.0, 20.0]]}, sl=SL[d]||[];
+  var cur = sl.filter(function(s){return h>=s[0]&&h<s[1]})[0];
+  var nxt = sl.filter(function(s){return h<s[0]})[0];
+  var open = !!cur, fmt=function(x){return Math.floor(x)+'h'+(x%1?'30':'')};
+  var el=document.getElementById('openNow');
+  el.textContent = open ? (cur[1]>=24?'Ouvert 24h/24':'Ouvert · jusqu\'à '+fmt(cur[1])) : nxt ? 'Fermé · ouvre à '+fmt(nxt[0]) : 'Fermé aujourd\'hui';
+  if(!open){var dot=document.querySelector('.fc-open .dot');dot.style.background='#C9853B';dot.style.animation='none'}
+
+  // nav shadow
+  var nav=document.getElementById('nav');
+  addEventListener('scroll',function(){nav.classList.toggle('scrolled',scrollY>10)},{passive:true});
+
+  // reveal + counter + bars
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(!e.isIntersecting)return;
+    e.target.classList.add('in');
+    if(e.target.id==='bars') e.target.classList.add('in-view');
+    io.unobserve(e.target);
+  })},{threshold:.15});
+  document.querySelectorAll('.rv,#bars').forEach(function(el){io.observe(el)});
+  var cnt=document.querySelector('[data-count]');
+  var co=new IntersectionObserver(function(es){if(!es[0].isIntersecting)return;co.disconnect();
+    var t=+cnt.dataset.count,s=performance.now();
+    (function f(n){var p=Math.min(1,(n-s)/1600);cnt.textContent=Math.round(t*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)})(s);
+  });co.observe(cnt);
+})();
+</script>
+</body>
+</html>
